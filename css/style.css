@@ -1,7 +1,9 @@
 /* Imports */
 @import url("reset.css");
 /* General */
-header, footer { text-align: center; }
+header, footer { text-align: center;  }
+header { padding: 50px; }
+header h1 { margin: 0; }
 /* IDs */
 #wrapper { width: 100%; max-width: 1280px; margin: 10px auto; }
 /* Classes */
