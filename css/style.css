@@ -2,11 +2,13 @@
 @import url("reset.css");
 /* General */
 a { text-decoration: none; color: #C00; transition: color .3s ease-in-out; }
-a:hover { color: #600; text-decoration: underline; }
+a:hover { color: #900; text-decoration: underline; }
 header, footer { text-align: center; background: #333; color: #fff; }
 header { padding: 50px; }
 header h1 { margin: 0; }
 footer { padding: 20px; }
 /* IDs */
 #wrapper { width: 100%; max-width: 1280px; margin: 10px auto; }
+#project-container { display: flex; flex-flow: row; flex-wrap: wrap; }
+#project-container div { width: 50%; }
 /* Classes */
