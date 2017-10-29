@@ -4,4 +4,10 @@ $(document).ready(function() {
   }).done(function(data) {
     console.log(data);
   });
+
+  $.ajax({
+    url: "https://api.github.com/users/darkrunedk"
+  }).done(function(data) {
+    console.log(data);
+  });
 });
