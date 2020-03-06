@@ -4,11 +4,15 @@
 a { text-decoration: none; color: #C00; transition: color .3s ease-in-out; }
 a:hover { color: #900; text-decoration: underline; }
 header, footer { text-align: center; background: #333; color: #fff; }
-header { padding: 50px; }
-header h1 { margin: 0; }
-footer { padding: 20px; }
+header, footer { padding: 25px 0; }
+header h1 { padding: 0; }
+h1 { padding: 1em 0; }
+h2,h3 { padding: .5em 0; }
+p { padding: 5px 0; }
 /* IDs */
-#wrapper { width: 100%; max-width: 1280px; margin: 10px auto; }
+#wrapper { width: 100%; max-width: 1280px; margin: 0px auto; padding: 2.5em 0; }
 #project-container { display: flex; flex-flow: row; flex-wrap: wrap; }
 #project-container div { width: 50%; }
+#info { margin: 1em 0; border-top: #dedede 1px solid; border-bottom: #dedede 1px solid; text-align: center; display: none; }
+#info.visible { display: block; }
 /* Classes */
