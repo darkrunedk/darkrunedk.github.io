@@ -59,7 +59,6 @@ $(document).ready(function() {
 					}
 
 					topic = project.topics[topicIndex];
-					console.log(topic);
 					if (!hasValidTopic){
 						hasValidTopic = ($.inArray(topic, validTopics) > -1) ? true : false;
 					}
