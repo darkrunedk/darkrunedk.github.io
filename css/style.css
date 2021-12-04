@@ -1,9 +1,16 @@
 /* Imports */
 @import url("reset.css");
 /* General */
-a { text-decoration: none; color: #C00; transition: color .3s ease-in-out; }
-a:hover { color: #900; text-decoration: underline; }
-header, footer { text-align: center; background: #333; color: #fff; }
+:root {
+    --primary-link-color: #C00;
+    --secondary-link-color: #900;
+    --primary-bg-color: #dedede;
+    --secondary-bg-color: #333;
+    --primary-header-text-color: #fff;
+}
+a { text-decoration: none; color: var(--primary-link-color); transition: color .3s ease-in-out; }
+a:hover { color: var(--secondary-link-color); text-decoration: underline; }
+header, footer { text-align: center; background: var(--secondary-bg-color); color: var(--primary-header-text-color); }
 header, footer { padding: 25px 0; }
 header h1 { padding: 0; }
 h1 { padding: 1em 0; }
@@ -13,6 +20,10 @@ p { padding: 5px 0; }
 #wrapper { width: 100%; max-width: 1280px; margin: 0px auto; padding: 2.5em 0; }
 #project-container { display: flex; flex-flow: row; flex-wrap: wrap; }
 #project-container div { width: 50%; }
-#info { margin: 1em 0; border-top: #dedede 1px solid; border-bottom: #dedede 1px solid; text-align: center; display: none; }
+#info { margin: 1em 0; border-top: var(--primary-bg-color) 1px solid; border-bottom: var(--primary-bg-color) 1px solid; text-align: center; display: none; }
 #info.visible { display: block; }
+#topic-container ul { margin: 0; padding: 0; background-color: var(--primary-link-color); }
+#topic-container ul li { display: inline-block; }
+#topic-container ul li a { display: block; padding: 10px 15px; text-decoration: none; text-transform: capitalize; color: var(--primary-header-text-color); transition: background-color .3s linear; }
+#topic-container ul li a:hover { background-color: var(--secondary-link-color); }
 /* Classes */
